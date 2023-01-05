@@ -74,13 +74,13 @@ tmon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $9" "substr ($
 cpu_usage1="$(ps aux | awk 'BEGIN {sum=0} {sum+=$3}; END {print sum}')"
 cpu_usage="$((${cpu_usage1/\.*} / ${corediilik:-1}))"
 cpu_usage+=" %"
-ISP=$(curl -s ipinfo.io/org?token=7578ac19afd785 | cut -d " " -f 2-10 )
-CITY=$(curl -s ipinfo.io/city?token=7578ac19afd785 )
-WKT=$(curl -s ipinfo.io/timezone?token=7578ac19afd785 )
+ISP=$(curl -s ipinfo.io/org?token=9dd884475f3ab2 | cut -d " " -f 2-10 )
+CITY=$(curl -s ipinfo.io/city?token=9dd884475f3ab2 )
+WKT=$(curl -s ipinfo.io/timezone?token=9dd884475f3ab2 )
 DAY=$(date +%A)
 DATE=$(date +%m/%d/%Y)
 DATE2=$(date -R | cut -d " " -f -5)
-IPVPS=$(curl -s ipinfo.io/ip?token=7578ac19afd785 )
+IPVPS=$(curl -s ipinfo.io/ip?token=9dd884475f3ab2 )
 cname=$( awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo )
 cores=$( awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo )
 freq=$( awk -F: ' /cpu MHz/ {freq=$2} END {print freq}' /proc/cpuinfo )
@@ -89,7 +89,7 @@ uram=$( free -m | awk 'NR==2 {print $3}' )
 fram=$( free -m | awk 'NR==2 {print $4}' )
 clear 
 echo -e "\e[33m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "                 • SUPREME •                 "
+echo -e "                 • INFO SERVER •                 "
 echo -e "\e[33m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\e[33m OS            \e[0m:  "`hostnamectl | grep "Operating System" | cut -d ' ' -f5-`	
 echo -e "\e[33m IP            \e[0m:  $IPVPS"	
