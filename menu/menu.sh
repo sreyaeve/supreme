@@ -19,7 +19,7 @@ do
 	if [[ $exp < $today ]]; then
 		Exp2="\033[1;31mExpired\033[0m"
         else
-        Exp2=$(curl -sS https://raw.githubusercontent.com/nanotechid/supreme/aio/permission/ip | grep $MYIP | awk '{print $3}')
+        Exp2=$(curl -sS https://raw.githubusercontent.com/sreyaeve/supreme/aio/permission/ip | grep $MYIP | awk '{print $3}')
 	fi
 done < /root/expired.txt
 rm /root/expired.txt
