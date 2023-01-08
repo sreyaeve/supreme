@@ -47,7 +47,7 @@ case $opt in
 3) clear ; auto-reboot ; exit ;;
 4) clear ; restart ; exit ;;
 5) clear ; bw ; exit ;;
-6) clear ; m-tcp ; exit ;;
+6) clear ; tcp ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
 *) echo -e "" ; echo "Anda salah tekan" ; sleep 1 ; m-system ;;
