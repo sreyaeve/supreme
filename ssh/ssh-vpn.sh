@@ -20,10 +20,10 @@ ver=$VERSION_ID
 country=ID
 state=Indonesia
 locality=Jakarta
-organization=none
-organizationalunit=none
-commonname=none
-email=none
+organization=www.vpncantik.biz.id
+organizationalunit=www.vpncantik.biz.id
+commonname=www.vpncantik.biz.id
+email=admin@vpncantik.biz.id
 
 # simple password minimal
 curl -sS https://raw.githubusercontent.com/sreyaeve/supreme/aio/ssh/password | openssl aes-256-cbc -d -a -pass pass:scvps07gg -pbkdf2 > /etc/pam.d/common-password
