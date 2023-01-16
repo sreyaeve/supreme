@@ -353,7 +353,7 @@ chmod +x speedtest
 chmod +x auto-reboot
 chmod +x restart
 chmod +x bw
-chmod +x m-tcp
+chmod +x tcp
 
 #chmod +x port-ssl
 #chmod +x port-ovpn
