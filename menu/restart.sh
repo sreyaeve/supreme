@@ -75,8 +75,6 @@ case $Restart in
                 sleep 0.5
                 echo -e "[ \033[32mok\033[0m ] Restarting websocket Service (via systemctl) "
                 sleep 0.5
-                systemctl restart sshws.service
-                systemctl restart ws-dropbear.service
                 systemctl restart ws-stunnel.service
                 sleep 0.5
                 echo -e "[ \033[32mok\033[0m ] Restarting Trojan Go Service (via systemctl) "
@@ -239,33 +237,13 @@ case $Restart in
                 sleep 1
                 echo -e "[ \033[32mok\033[0m ] Restarting websocket Service (via systemctl) "
                 sleep 0.5
-                systemctl restart sshws.service
-                systemctl restart ws-dropbear.service
                 systemctl restart ws-stunnel.service
                 sleep 0.5
                 echo -e "[ \033[32mInfo\033[0m ] WEBSOCKET Service Restarted"
                 echo ""
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
-                read -n 1 -s -r -p "Press any key to back on system menu"
-                restart
-                ;;
-                11)
-                clear
-                echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-                echo -e "\E[0;100;33m         • RESTART MENU •          \E[0m"
-                echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-                echo -e ""
-                echo -e "[ \033[32mInfo\033[0m ] Restart Begin"
-                sleep 1
-                echo -e "[ \033[32mok\033[0m ] Restarting Trojan Go Service (via systemctl) "
-                sleep 0.5
-                systemctl restart trojan-go.service
-                sleep 0.5
-                echo -e "[ \033[32mInfo\033[0m ] Trojan Go Service Restarted"
-                echo ""
-                echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-                echo ""
+hhhjjjjjj
                 read -n 1 -s -r -p "Press any key to back on system menu"
                 restart
                 ;;                                                                         
@@ -277,5 +255,5 @@ case $Restart in
                 clear
                 exit
                 ;;
-                *) echo -e "" ; echo "Boh salah tekan, Sayang kedak Babi" ; sleep 1 ; restart ;;               
+                *) echo -e "" ; echo "Anda Salah Tekan" ; sleep 1 ; restart ;;               
         esac
