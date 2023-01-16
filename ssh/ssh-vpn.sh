@@ -308,7 +308,8 @@ wget -O speedtest "https://raw.githubusercontent.com/sreyaeve/supreme/aio/ssh/sp
 #wget -O about "https://raw.githubusercontent.com/sreyaeve/supreme/aio/menu/about.sh"
 wget -O auto-reboot "https://raw.githubusercontent.com/sreyaeve/supreme/aio/menu/auto-reboot.sh"
 wget -O restart "https://raw.githubusercontent.com/sreyaeve/supreme/aio/menu/restart.sh"
-wget -O bw "https://raw.githubusercontent.com/sreyaeve/supreme/aio/menu/tcp.sh"
+wget -O bw "https://raw.githubusercontent.com/sreyaeve/supreme/aio/menu/bw.sh"
+wget -O tcp "https://raw.githubusercontent.com/sreyaeve/supreme/aio/menu/tcp.sh"
 
 # change port
 #wget -O port-ssl "https://raw.githubusercontent.com/sreyaeve/supreme/aio/port/port-ssl.sh"
