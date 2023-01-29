@@ -52,6 +52,10 @@ touch /var/log/xray/error2.log
 # / / Ambil Xray Core Version Terbaru
 bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" @ install -u www-data --version 1.6.1
 
+#Download XRAY Core Dharak
+wget -O /usr/local/bin/xray "https://github.com/dharak36/Xray-core/releases/download/v1.0.0/xray.linux.64bit"
+chmod +x /usr/local/bin/xray
+
 ## crt xray
 systemctl stop nginx
 mkdir /root/.acme.sh
