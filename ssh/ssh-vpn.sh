@@ -276,8 +276,9 @@ cat> /etc/issue.net << END
 <br><font color='yellow'><b>wa.me/628197784343</b></font>   
 <br><font color='yellow'><b>https://t.me/zenhost_official</b></font>
 <br><font color='green'><b>┗━━━━━━━━━━ ✫ ━━━━━━━━━━┛</b><br></font>
-#install bbr dan optimasi kernel
 END
+#install bbr dan optimasi kernel
+
 #wget https://raw.githubusercontent.com/sreyaeve/supreme/aio/ssh/bbr.sh && chmod +x bbr.sh && ./bbr.sh
 
 # blokir torrent
