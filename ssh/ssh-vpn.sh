@@ -252,7 +252,32 @@ echo; echo 'Installation has completed.'
 echo 'Config file is at /usr/local/ddos/ddos.conf'
 echo 'Please send in your comments and/or suggestions to zaf@vsnl.com'
 
+# banner /etc/issue.net
+sleep 1
+echo -e "[ ${green}INFO$NC ] Settings banner"
+wget -q -O /etc/issue.net "https://raw.githubusercontent.com/sreyaeve/autoscript/main/issue.net"
+chmod +x /etc/issue.net
+echo "Banner /etc/issue.net" >> /etc/ssh/sshd_config
+sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
+cat> /etc/issue.net << END
+<p style="text-align:center"><b>
+<br><font color='green'><b>┏━━━━━━━━━━ ✫ ━━━━━━━━━━┓</b></font>
+<br><font color='#8A95FF'><b>⇱ ZENHOST OFFICIAL ⇲</b></font>
+<br><font color='green'><b>┗━━━━━━━━━━ ✫ ━━━━━━━━━━┛</b><br></font>
+<br><font color='green'><b>┏━━━━━━━━━━ ✫ ━━━━━━━━━━┓</b></font>
+<br><font color='#8A95FF'><b>No DDOS - No Torrent - No OverDownload</b></font>
+<br><font color='#8A95FF'><b>No Carding - No Hacking - No Spamming</b></font>
+<br><font color='#8A95FF'><b>No Bot - No Mining - No Ilegal Activites</b></font>
+<br><font color='green'><b>┗━━━━━━━━━━ ✫ ━━━━━━━━━━┛</b><br></font>
+<br><font color='#FF000E'>&ensp;⇱ Melanggar Banned ⇲</font>
+<br><font color='#F4FF01'>&ensp;⇱ Happy Use ⇲</font>
+<br><font color='green'><b>┏━━━━━━━━━━ ✫ ━━━━━━━━━━┓</b></font>                                                
+<br><font color='blue'><b>⇱ Contact Owner ⇲</b></font>
+<br><font color='yellow'><b>wa.me/628197784343</b></font>   
+<br><font color='yellow'><b>https://t.me/zenhost_official</b></font>
+<br><font color='green'><b>┗━━━━━━━━━━ ✫ ━━━━━━━━━━┛</b><br></font>
 #install bbr dan optimasi kernel
+END
 #wget https://raw.githubusercontent.com/sreyaeve/supreme/aio/ssh/bbr.sh && chmod +x bbr.sh && ./bbr.sh
 
 # blokir torrent
