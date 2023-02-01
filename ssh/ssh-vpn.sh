@@ -273,7 +273,7 @@ cat> /etc/issue.net << END
 <br><font color='#F4FF01'>&ensp;⇱ Happy Use ⇲</font>
 <br><font color='green'><b>┏━━━━━━━━━━ ✫ ━━━━━━━━━━┓</b></font>                                                
 <br><font color='blue'><b>⇱ Contact Owner ⇲</b></font>
-<br><font color='yellow'><b>wa.me/628197784343</b></font>   
+<br><font color='yellow'><b>wa.me/6281977814343</b></font>   
 <br><font color='yellow'><b>https://t.me/zenhost_official</b></font>
 <br><font color='green'><b>┗━━━━━━━━━━ ✫ ━━━━━━━━━━┛</b><br></font>
 END
